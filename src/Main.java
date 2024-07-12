@@ -1,6 +1,7 @@
 interface Workable {
     void work();
 }
+
 interface Readable{
 
     void read();
@@ -11,6 +12,12 @@ interface Eatable {
     void eat();
 }
 
+interface actions {
+    void hit();
+}
+
+class HumanWorker implements actions {
+
 interface Chargable {
     void charge();
 }
@@ -19,7 +26,15 @@ class HumanWorker implements Workable {
         System.out.println("Human working...");
     }
 
-   
+    public void eat() {
+        System.out.println("Human eating...");
+    }
+
+    @Override
+    public void hit() {
+        System.out.println("human hitting...");
+    }
+
 }
 
 class RobotWorker implements Workable, Chargable {
