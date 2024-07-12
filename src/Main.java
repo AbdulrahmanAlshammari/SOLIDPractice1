@@ -1,6 +1,10 @@
 interface Workable {
     void work();
 }
+interface Readable{
+
+    void read();
+}
 
 interface Eatable {
     void eat();
@@ -20,6 +24,9 @@ class RobotWorker implements Workable {
     public void work() {
         System.out.println("Robot working...");
     }
+    public void read(){
+        System.out.println("Robot Readable...");
+    }
 }
 
 public class Main {
@@ -33,4 +40,5 @@ public class Main {
         robot.work();
         // robot.eat(); // This method doesn't exist for RobotWorker, as it should be.
     }
+
 }
