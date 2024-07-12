@@ -1,18 +1,27 @@
 interface Workable {
     void work();
 }
-// hey its mohammad 3
+
 interface Eatable {
     void eat();
 }
 
-class HumanWorker implements Workable {
+interface actions {
+    void hit();
+}
+
+class HumanWorker implements actions {
     public void work() {
         System.out.println("Human working...");
     }
 
     public void eat() {
         System.out.println("Human eating...");
+    }
+
+    @Override
+    public void hit() {
+        System.out.println("human hitting...");
     }
 }
 
