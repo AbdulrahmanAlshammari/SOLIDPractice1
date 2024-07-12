@@ -1,7 +1,7 @@
 interface Workable {
     void work();
 }
-// hey its mohammad
+// hey its mohammad2
 interface Eatable {
     void eat();
 }
