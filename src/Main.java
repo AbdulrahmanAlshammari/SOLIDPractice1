@@ -5,8 +5,7 @@ interface Workable {
 interface Eatable {
     void eat();
 }
-//ff
-//ffe
+
 class HumanWorker implements Workable {
     public void work() {
         System.out.println("Human working...");
